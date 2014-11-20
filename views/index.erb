@@ -3,6 +3,8 @@
   <head>
     <script src="/javascripts/jquery.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/custom_functions.js"></script>
+    <script src="/javascripts/game.js"></script>
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/stylesheets/custom.css" rel="stylesheet">
@@ -10,12 +12,21 @@
   </head>
   <body>
 
-
     <div class="container">
 
-      <div class="row center">
-        <img src="/images/whac-a-mole.jpg">
-      <div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+          <img src="/images/whac-a-mole.jpg">
+        </div>
+        <div class="col-md-2">
+          <table class="table table-bordered" id="scoreboard">
+            <tr><td>Score</td></tr>
+            <tr><td id="counter">0</td></tr>
+          </table>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
 
       <div class="row">
         <div class="col-md-2"></div>
@@ -26,11 +37,12 @@
             <% 3.times do %>
               <tr id="hole-row">
                 <% 3.times do %>
-                  <% @i += 1 %>
                   <td>
                     <div class="full-width center">
                       <div class="circle hole">
-                        <div id="gopher-spot-<%= @i %>">
+                        <div id="mole-hole-<%= @i += 1 %>" class="mole inv">
+                          <img src="images/mole.png">
+                        </div>
                       </div>
                     </div>
                   </td>
