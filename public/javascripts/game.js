@@ -9,19 +9,15 @@ $( document ).ready(function() {
       num = randomInt(1,9);
       selection = $("#mole-hole-" + num.toString());
     }
-    activeMole.slideUp();
+    activeMole.hide("slide", { direction: 'down' });
     activeMole = selection;
-    activeMole.slideDown();
-
-    // showMole(activeMole);
-    // activeMole = selection;
-    // hideMole(activeMole);
+    activeMole.show("slide", { direction: 'down' });
   }
 
   function play() {
     setInterval(function() {
       selectMole();
-    }, 800);
+    }, 1000);
   }
 
   $(".mole").on("click", function() {
@@ -31,4 +27,6 @@ $( document ).ready(function() {
   });
 
   play();
+
+
 });
