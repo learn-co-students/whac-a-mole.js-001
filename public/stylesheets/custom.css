@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+}
+
+.lawn {
+  background-color: green;
+  border-radius: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.hole {
+  width: 200px;
+  height: 100px;
+  -webkit-border-radius: 100px / 50px;
+  -moz-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+  background-color: black;
+  position: relative;
+  margin: 0 auto;
+}
+
+.table>tbody>tr>th, .table>tbody>tr>td {
+  border-top: none;
+}
+
+#hole-row {
+  height: 170px;
+}
+
+#top-row {
+  height: 50px;
+}
