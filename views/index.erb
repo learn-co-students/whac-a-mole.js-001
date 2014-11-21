@@ -4,10 +4,9 @@
     <script src="/javascripts/jquery.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
     <script src="/javascripts/jquery-ui.min.js"></script>
-    <script src="/javascripts/custom_functions.js"></script>
+    <script src="/javascripts/game-functions.js"></script>
     <script src="/javascripts/game.js"></script>
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href="/stylesheets/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/stylesheets/custom.css" rel="stylesheet">
     <title>Whac-A-Mole</title>
   </head>
@@ -41,7 +40,7 @@
                   <td>
                     <div class="full-width center">
                       <div class="circle hole">
-                        <div id="mole-hole-<%= @i += 1 %>" class="mole inv">
+                        <div id="mole-num-<%= @i += 1 %>" class="mole inv">
                           <img src="images/mole.png" class="mole-pic">
                         </div>
                       </div>
