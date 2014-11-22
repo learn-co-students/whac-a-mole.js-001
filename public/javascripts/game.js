@@ -1,6 +1,10 @@
 $( document ).ready(function() {
   
-  // create your click handler here
+  $(".mole").on("click", function() {
+    var originalCount = parseInt($("#counter").text());
+    $("#counter").text(originalCount += 1);
+    $(this).hide();
+  });
 
   play();
 
