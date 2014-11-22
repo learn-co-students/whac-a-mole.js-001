@@ -8,4 +8,4 @@ javascripts:
   specs:
     - spec/fixtures/jasmine-jquery.js
     - spec/spec.helper.js
-    - spec/game.spec.js
+    - spec/javascript.spec.js
