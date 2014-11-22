@@ -11,7 +11,6 @@ describe('Game:', function() {
         expect(num).toBeLessThan(arr[1] + 1);
       });
     });
-
   });
 
   describe("Select Mole", function() {
@@ -36,6 +35,22 @@ describe('Game:', function() {
       }, 1);
     });
 
+    it("doesn't select the same hole two times in a row", function() {
+      var lastPosition = "no mole position yet!";
+      var i = 0;
+
+      function storeNextPosition() {
+        var position = $(".mole:visible").attr('id');
+        expect(position).not.toEqual(lastPosition);
+
+        lastPosition = position;
+        if (i++ < 20 ) {
+          selectMole();
+          setTimeout(storeNextPosition, 1);
+        }
+      }
+      storeNextPosition();
+    });
   });
 
   describe("Score", function() {
@@ -54,7 +69,5 @@ describe('Game:', function() {
       }, 1);
 
     });
-
   });
-
 });

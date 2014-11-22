@@ -21,7 +21,7 @@ The instructions are split into four sections:
 
 1. [Manipulate the DOM](#manipulate-the-dom)
 2. [Generate a Random Number](#generate-a-random-number)
-3. [Show a New Mole, Hide an Old One](#show-a-new-mole,-hide-an-old-one)
+3. [Show a New Mole, Hide an Old One](#show-a-new-mole-hide-an-old-one)
 4. [Increment the Score](#increment-the-score)
 
 ### Manipulate the DOM
