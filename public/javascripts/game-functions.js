@@ -6,7 +6,7 @@ function randomInt(min,max) {
 
 function selectMole() {
   var selection = activeMole;
-  while(selection.attr('id') == activeMole.attr('id')) {
+  while (selection.attr('id') == activeMole.attr('id')) {
     var num = randomInt(1,9);
     selection = $("#mole-num-" + num);
   }
