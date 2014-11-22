@@ -38,4 +38,23 @@ describe('Game:', function() {
 
   });
 
+  describe("Score", function() {
+
+    beforeEach(function() {
+      setFixtures('<!DOCTYPE html><html><head><script src="/javascripts/game.js"></script></head><body><div class="container"><div class="row"><div class="col-md-2"></div><div class="col-md-6"><img src="images/whac-a-mole.jpg"></div><div class="col-md-2"><table class="table table-bordered" id="scoreboard"><tr><td>Score</td></tr><tr><td id="counter">0</td></tr></table></div><div class="col-md-2"></div></div><div class="row"><div class="col-md-2"></div><div class="col-md-8 lawn"><table class="table"><tr id="top-row"></tr><tr id="hole-row"><td><div class="full-width center"><div class="circle hole"><div id="mole-num-1" class="mole inv"><img src="images/mole.png" class="mole-pic"></div></div></div></td><td><div class="full-width center"><div class="circle hole"><div id="mole-num-2" class="mole inv"><img src="images/mole.png" class="mole-pic"></div></div></div></td><td><div class="full-width center"><div class="circle hole"><div id="mole-num-3" class="mole inv"><img src="images/mole.png" class="mole-pic"></div></div></div></td></tr><tr id="hole-row"><td><div class="full-width center"><div class="circle hole"><div id="mole-num-4" class="mole inv"><img src="images/mole.png" class="mole-pic"></div></div></div></td><td><div class="full-width center"><div class="circle hole"><div id="mole-num-5" class="mole inv"><img src="images/mole.png" class="mole-pic"></div></div></div></td><td><div class="full-width center"><div class="circle hole"><div id="mole-num-6" class="mole inv"><img src="images/mole.png" class="mole-pic"></div></div></div></td></tr><tr id="hole-row"><td><div class="full-width center"><div class="circle hole"><div id="mole-num-7" class="mole inv"><img src="images/mole.png" class="mole-pic"></div></div></div></td><td><div class="full-width center"><div class="circle hole"><div id="mole-num-8" class="mole inv"><img src="images/mole.png" class="mole-pic"></div></div></div></td><td><div class="full-width center"><div class="circle hole"><div id="mole-num-9" class="mole inv"><img src="images/mole.png" class="mole-pic"></div></div></div></td></tr></table></div><div class="col-md-2"></div></div></div></body></html>');
+    });
+
+    it('increments when a mole is clicked', function() {
+      var score = parseInt($("#counter").text());
+      setTimeout(function(){$(".mole:visible").click();}, 1);
+      
+      setTimeout(function() {
+        var newScore = (score += 1).toString();
+        expect($("#counter").text()).toEqual(newScore);
+      }, 1);
+
+    });
+
+  });
+
 });
