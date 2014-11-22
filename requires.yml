@@ -5,8 +5,7 @@ javascripts:
     - public/javascripts/jquery-ui.min.js
     - public/javascripts/bootstrap.min.js
     - public/javascripts/game-functions.js
-    - public/javascripts/game.js
   specs:
-    - spec/jasmine-jquery.js
+    - spec/fixtures/jasmine-jquery.js
     - spec/spec.helper.js
     - spec/game.spec.js

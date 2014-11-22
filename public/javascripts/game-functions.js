@@ -1,15 +1,14 @@
 var activeMole = $("#mole-num-1");
-var num, selection;
 
 function randomInt(min,max) {
   return Math.floor(Math.random()*(max-min+1)+min);
 }
 
 function selectMole() {
-  selection = activeMole;
+  var selection = activeMole;
   while(selection.attr('id') == activeMole.attr('id')) {
-    num = randomInt(1,9);
-    selection = $("#mole-num-" + num.toString());
+    var num = randomInt(1,9);
+    selection = $("#mole-num-" + num);
   }
   activeMole.hide("slide", { direction: 'down' });
   activeMole = selection;
