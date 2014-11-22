@@ -5,7 +5,8 @@ resources: 5
 level: intermediate
 ---
 
-# Whac A Mole
+# Whac A Mole :hammer: 
+
 
 ## Objectives
 
