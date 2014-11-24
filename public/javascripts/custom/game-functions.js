@@ -4,11 +4,10 @@ function randomInt(min,max) {
 
 function selectMole() {
   // here you're going to find what mole is visible
-  // and hide it
+  // hide the visible mole
 
-  // select a new mole to make visible, 
-  // making sure it isn't the same as the previous visible mole
-  // and make this new mole visible
+  // select a new mole to visible, making sure it isn't the same as the previous one
+  // and make the new mole visible
 }
 
 // the function below is called on game.js and calls on your selectMole() function every second
