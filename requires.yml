@@ -1,10 +1,10 @@
 # A list of javascript files required for the project, in dependency order
 javascripts:
   files:
-    - public/javascripts/jquery.js
-    - public/javascripts/jquery-ui.min.js
-    - public/javascripts/bootstrap.min.js
-    - public/javascripts/game-functions.js
+    - public/javascripts/libraries/jquery.js
+    - public/javascripts/libraries/jquery-ui.min.js
+    - public/javascripts/libraries/bootstrap.min.js
+    - public/javascripts/custom/game-functions.js
   specs:
     - spec/fixtures/jasmine-jquery.js
     - spec/spec.helper.js

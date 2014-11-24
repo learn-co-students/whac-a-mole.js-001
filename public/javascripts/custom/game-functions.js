@@ -3,16 +3,11 @@ function randomInt(min,max) {
 }
 
 function selectMole() {
-  var activeMole = $(".mole:visible");
-  if(activeMole.length < 1) {
-    activeMole = $("#mole-num-" + randomInt(1,9));
-  }
-
-  var selection = activeMole;
+  var selection = $(".mole:visible");
   while (selection.attr('id') == activeMole.attr('id')) {
-    selection = $("#mole-num-" + randomInt(1,9));
+    var num = randomInt(1,9);
+    selection = $("#mole-num-" + num);
   }
-  
   activeMole.hide("slide", { direction: 'down' });
   activeMole = selection;
   activeMole.show("slide", { direction: 'down' });
