@@ -46,7 +46,7 @@ describe('Game:', function() {
         expect(position).not.toEqual(lastPosition);
 
         lastPosition = position;
-        if (i++ < 10) {
+        if (i++ < 4) {
           selectMole();
           setTimeout(storeNextPosition, 1000);
         } else {
