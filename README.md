@@ -15,7 +15,7 @@ You'll be building whac-a-mole game, [demo here](http://kthffmn.github.io/whac-a
 
 Before getting started, remember to run `bundle install` from the root of the directory. 
 
-This lab is Jasmine tested so you'll be running `ironboard` (terminal format) or `ironboard -b` (HTML format) from the root of the directory to see where your code is at.
+This lab is Jasmine tested so you'll be running `learn` (terminal format) or `learn -b` (HTML format) from the root of the directory to see where your code is at.
 
 The instructions are split into four sections:
 
@@ -55,7 +55,7 @@ randomInt(4,9);
 
 For a hint about how to accomplish this, take a look at [Mozilla's JS Random Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) and a [Stack Overflow post](http://stackoverflow.com/a/1527820/2890716).
 
-This function is the first function tested by the Jasmine suite so go ahead and run `ironboard` or `ironboard -b` from your terminal to see if it passes.
+This function is the first function tested by the Jasmine suite so go ahead and run `learn` or `learn -b` from your terminal to see if it passes.
 
 ### Show a New Mole, Hide an Old One
 
@@ -68,7 +68,7 @@ In the same file, using what you learned in the DOM manipulation section, you'll
 
 Keep in mind that this function will be just a bit more complex than these four bullet points as you don't want a mole to disappear from hole number one only to reappear in the same hole.
 
-This function is tested by the second and third Jasmine tests so run `ironboard`/`ironboard -b` to see where you're at.
+This function is tested by the second and third Jasmine tests so run `learn`/`learn -b` to see where you're at.
 
 ### Increment the Score
 
