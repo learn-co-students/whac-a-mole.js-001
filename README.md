@@ -26,7 +26,7 @@ The instructions are split into four sections:
 
 ### Manipulate the DOM
 
-* Run `shotgun` or `rackup` from the command line and visit [localhost:9292](http://localhost:9292/) or [localhost:9393](http://localhost:9292/) respectively.
+* Run `shotgun` or `rackup` from the command line and visit [localhost:9292](http://localhost:9292/) or [localhost:9393](http://localhost:9393/) respectively.
 * Open up the JavaScript console in your browser (`command ⌘` + `option` + `J`). The `index.html` page has already loaded jQuery so go ahead and type `$("#mole-num-1").show();` into the console. Notice what happens.
 * Now take `$("#mole-num-5").show();`. What do you think will happen? Run the code. Notice that every mole has a number, starting with 1 and ending with 9.
 * Let's make the animations look a bit better. The jQuery UI library is also included in this lab, to learn more about it, read about it [here](http://api.jqueryui.com/).
