@@ -76,7 +76,7 @@ Every time a user manages to click on a mole before it disappears, you should re
 
 Within the `$(document).ready` function in `game.js`, add a click handler for all divs that match the class "mole". Within this click handler, you'll want to hide the mole that was clicked and increment the score. 
 
-This function is tested by Capybara so run `rspec` to see where you're at.
+This function is tested by Capybara so run `learn` to see where you're at.
 
 Hints:
 * Think back to the DOM manipulation section if you want to remember how to fetch the value of the score.
