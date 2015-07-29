@@ -1,9 +1,4 @@
----
-tags: jquery
-languages: javascript
-resources: 5
-level: intermediate
----
+
 
 # Whac A Mole :hammer:
 
