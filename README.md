@@ -1,5 +1,3 @@
-
-
 # Whac A Mole :hammer:
 
 ## Objectives
